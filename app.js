@@ -1,21 +1,22 @@
 (() => {
-  const STORAGE_KEY = "vt-woodstock-itinerary-v1";
+  const STORAGE_KEY = "vt-woodstock-itinerary-v2";
 
   const BOOK_ITEMS = [
-    "Book On The River Inn Farmhouse 2BR — prefer ground-floor courtyard",
+    "Book On The River Inn Farmhouse 2BR — ground-floor courtyard, check-in Thu Oct 1, check-out Mon Oct 5 (4 nights)",
     "Confirm crib / pack-and-play in writing",
     "Confirm nightly amenity fee and what it includes",
-    "Worthy Kitchen Resy for Friday and/or Saturday",
-    "Optional: Billings Farm advance tickets",
-    "Optional: VINS tickets the morning you go",
-    "If Farmhouse is gone: Fat Sheep loft check, or Newton Village 2B"
+    "Worthy Kitchen Resy for Friday, Saturday, and/or Sunday (closed Monday)",
+    "Harvest Celebration advance tickets for Saturday Oct 3 (optional Sunday Oct 4)",
+    "Optional: VINS tickets for Friday morning",
+    "If Farmhouse is gone: Fat Sheep loft check, or Newton Village 2B for Oct 1–5"
   ];
 
   const PACK_ITEMS = [
-    "All-terrain stroller",
-    "Toddler sleep kit: white noise, sleep sack, lovey",
+    "All-terrain stroller plus a carrier for the Farm Manager’s House",
+    "Toddler sleep kit: white noise, sleep sack, lovey (car + lodging)",
+    "Playground bag for Elizabeth Park / Wickham (wipes, water, snack)",
     "Layers + rain shells (early October swings)",
-    "Car snacks, water, and a change of clothes for the drive",
+    "Car snacks, water, and a change of clothes for both drives",
     "Compact first-aid and toddler meds",
     "Lightweight picnic blanket",
     "Phone chargers and offline maps",
