@@ -17,7 +17,7 @@ Source is also on GitHub: [gteodoru/woodstock-quechee-october](https://github.co
 - Overview: exact dates, Woodstock as a soft-yes base, car-nap drive strategy (Elizabeth Park / Wickham), Harvest weekend foliage
 - Named-date tabs (Thu Oct 1 – Mon Oct 5) with expandable activity cards, official links, and Harvest Celebration on Saturday
 - Nap-window toggle that highlights 12:30–2:30 across the plan
-- Lodging: Quechee Airbnb under review; On The River Farmhouse 2BR as the strong alt; Fat Sheep and Newton Village backups
+- Lodging: Quechee Airbnb (soft-yes primary); On The River Farmhouse and Newton Village as alternates; Fat Sheep as a farm-stay fallback
 - Dining, rain backups, booking + pack checklists
 - Photo gallery (local `/images`), Google Maps embeds, and Google review links
 - Share-this-day and print / PDF styles
