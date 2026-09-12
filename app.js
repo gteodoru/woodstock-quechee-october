@@ -1,15 +1,15 @@
 (() => {
-  const STORAGE_KEY = "vt-woodstock-itinerary-v2";
+  const STORAGE_KEY = "vt-woodstock-itinerary-v3";
 
   const BOOK_ITEMS = [
-    "Book On The River Inn Farmhouse 2BR — ground-floor courtyard, check-in Thu Oct 1, check-out Mon Oct 5 (4 nights)",
-    "Confirm crib / pack-and-play in writing",
-    "Confirm nightly amenity fee and what it includes",
+    "Book Airbnb Quechee house (40594337) for Oct 1–5 — $2,381 shown for 3 adults + infant",
+    "Confirm pack ’n play and high chair in writing (on request only)",
+    "Confirm bedroom layout (listing text vs cards) and which room is for the toddler nap",
+    "Ask about stairs / loft and treat the wood stove as adult-only",
     "Worthy Kitchen Resy for Friday, Saturday, and/or Sunday (closed Monday)",
     "Harvest Celebration advance tickets for Saturday Oct 3 (optional Sunday Oct 4)",
     "Optional: VINS tickets for Friday morning",
-    "Decide Airbnb Quechee house vs On The River Farmhouse (Airbnb still under review)",
-    "If Farmhouse is gone: Fat Sheep loft check, or Newton Village 2B for Oct 1–5"
+    "Hold On The River Farmhouse or Newton Village 2B as backup if the Airbnb falls through"
   ];
 
   const PACK_ITEMS = [
