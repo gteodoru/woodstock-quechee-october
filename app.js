@@ -8,6 +8,7 @@
     "Worthy Kitchen Resy for Friday, Saturday, and/or Sunday (closed Monday)",
     "Harvest Celebration advance tickets for Saturday Oct 3 (optional Sunday Oct 4)",
     "Optional: VINS tickets for Friday morning",
+    "Decide Airbnb Quechee house vs On The River Farmhouse (Airbnb still under review)",
     "If Farmhouse is gone: Fat Sheep loft check, or Newton Village 2B for Oct 1–5"
   ];
 
@@ -196,6 +197,30 @@
   renderChecks(packList, PACK_ITEMS, "pack");
   applyNap(Boolean(state.naps));
   if (state.day) showDay(Number(state.day));
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+
+  function openLightbox(src, caption, alt) {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || caption || "";
+    lightboxCaption.textContent = caption || "";
+    if (typeof lightbox.showModal === "function") lightbox.showModal();
+  }
+
+  document.querySelectorAll("[data-lightbox]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const thumb = button.querySelector("img");
+      openLightbox(button.dataset.lightbox, button.dataset.caption, thumb?.alt);
+    });
+  });
+
+  document.getElementById("lightbox-close")?.addEventListener("click", () => lightbox.close());
+  lightbox?.addEventListener("click", (event) => {
+    if (event.target === lightbox) lightbox.close();
+  });
 
   napToggle.addEventListener("change", () => applyNap(napToggle.checked));
   shareBtn.addEventListener("click", shareDay);
