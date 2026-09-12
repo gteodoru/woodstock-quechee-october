@@ -251,6 +251,11 @@ a:hover {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto 2.4rem;
   max-width: 40rem;
+  padding: 1.35rem 1.4rem 1.5rem;
+  background: rgba(250, 246, 238, 0.92);
+  border: 1px solid rgba(36, 28, 20, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(20, 14, 8, 0.18);
 }
 
 .eyebrow {
@@ -425,7 +430,7 @@ a:hover {
 
 .week-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.75rem;
   margin-top: 1.4rem;
 }
@@ -497,9 +502,9 @@ a:hover {
   background: transparent;
   color: var(--forest);
   font-family: Outfit, system-ui, sans-serif;
-  font-size: 0.86rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  padding: 0.55rem 0.9rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 999px;
   cursor: pointer;
 }
@@ -770,11 +775,16 @@ body.naps-on .card.is-nap .card-head time {
   color: var(--nap);
 }
 
+@media (max-width: 1100px) {
+  .week-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 920px) {
   .overview-grid,
   .lodging-grid,
   .lists-grid,
-  .week-strip,
   .rhythm,
   .dining-list {
     grid-template-columns: 1fr 1fr;
