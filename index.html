@@ -31,6 +31,7 @@
       <nav class="nav" aria-label="Sections">
         <a href="#overview">Overview</a>
         <a href="#days">Days</a>
+        <a href="#maps">Maps</a>
         <a href="#lodging">Stay</a>
         <a href="#dining">Eat</a>
         <a href="#lists">Lists</a>
@@ -49,13 +50,15 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-landscape" aria-hidden="true">
-        <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice">
-          <path class="hill hill-back" d="M0 250 C140 210 220 160 360 190 C500 220 560 140 720 170 C860 198 960 130 1200 180 L1200 420 L0 420 Z"/>
-          <path class="hill hill-mid" d="M0 290 C180 240 280 250 420 270 C580 294 640 220 800 250 C940 276 1040 230 1200 270 L1200 420 L0 420 Z"/>
-          <path class="hill hill-front" d="M0 340 C200 300 340 320 500 345 C680 372 760 310 940 340 C1040 356 1120 330 1200 350 L1200 420 L0 420 Z"/>
-          <path class="river" d="M0 390 C220 370 380 400 560 385 C760 368 900 400 1200 375 L1200 420 L0 420 Z"/>
-        </svg>
+      <div class="hero-photo">
+        <img
+          src="images/foliage-800.jpg"
+          srcset="images/foliage-800.jpg 800w, images/foliage.jpg 1600w"
+          sizes="100vw"
+          width="1600"
+          height="900"
+          alt="Autumn foliage in Woodstock, Vermont"
+          fetchpriority="high">
       </div>
       <div class="hero-inner">
         <p class="eyebrow">Family travel journal · Thursday–Monday</p>
@@ -130,6 +133,69 @@
           <small>Sugarbush or coffee · depart ~noon · <b class="nap-chip">car nap</b></small>
         </button>
       </div>
+
+      <div class="mood-gallery" aria-label="Trip photographs">
+        <button type="button" data-lightbox="images/bridge.jpg" data-caption="Middle Covered Bridge, Woodstock">
+          <img src="images/bridge-800.jpg" srcset="images/bridge-800.jpg 800w, images/bridge.jpg 1200w" sizes="(max-width: 700px) 100vw, 50vw" width="1200" height="800" alt="Woodstock Middle Covered Bridge" loading="lazy">
+          <span>Covered bridge</span>
+        </button>
+        <button type="button" data-lightbox="images/billings.jpg" data-caption="Billings Farm meadows, Woodstock">
+          <img src="images/billings-800.jpg" srcset="images/billings-800.jpg 800w, images/billings.jpg 1600w" sizes="(max-width: 700px) 50vw, 25vw" width="1600" height="754" alt="Billings Farm fields" loading="lazy">
+          <span>Billings Farm</span>
+        </button>
+        <button type="button" data-lightbox="images/gorge.jpg" data-caption="Quechee Gorge Bridge overlook">
+          <img src="images/gorge-800.jpg" srcset="images/gorge-800.jpg 800w, images/gorge.jpg 1200w" sizes="(max-width: 700px) 50vw, 25vw" width="1200" height="800" alt="Quechee Gorge from the Route 4 bridge" loading="lazy">
+          <span>Quechee Gorge</span>
+        </button>
+        <button type="button" data-lightbox="images/owl.jpg" data-caption="Great horned owl at VINS, Quechee">
+          <img src="images/owl-800.jpg" srcset="images/owl-800.jpg 800w, images/owl.jpg 1071w" sizes="(max-width: 700px) 50vw, 25vw" width="1071" height="800" alt="Great horned owl at VINS" loading="lazy">
+          <span>VINS raptors</span>
+        </button>
+        <button type="button" data-lightbox="images/maple.jpg" data-caption="Vermont maple syrup grades">
+          <img src="images/maple-800.jpg" srcset="images/maple-800.jpg 800w, images/maple.jpg 800w" sizes="(max-width: 700px) 50vw, 25vw" width="800" height="536" alt="Bottles of Vermont maple syrup" loading="lazy">
+          <span>Maple</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="maps">
+      <div class="section-head">
+        <p class="eyebrow">Pin the days</p>
+        <h2>Maps</h2>
+        <p class="section-lede">Interactive Google Maps for the drive stop and the four Vermont anchors. Ratings and full reviews live on the Google place pages.</p>
+      </div>
+      <div class="maps-grid">
+        <article class="map-card">
+          <h3>Elizabeth Park</h3>
+          <p>Midway play stop · West Hartford · free</p>
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Elizabeth Park, West Hartford" src="https://maps.google.com/maps?q=Elizabeth+Park,+1561+Asylum+Avenue,+West+Hartford,+CT&z=14&output=embed&hl=en"></iframe>
+          <p class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Elizabeth+Park+West+Hartford+CT" target="_blank" rel="noopener">Google Maps &amp; reviews</a></p>
+        </article>
+        <article class="map-card">
+          <h3>On The River / Woodstock</h3>
+          <p>Village base · 1653 W Woodstock Rd</p>
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of On The River Inn, Woodstock" src="https://maps.google.com/maps?q=On+The+River+Inn,+1653+W+Woodstock+Rd,+Woodstock,+VT&z=14&output=embed&hl=en"></iframe>
+          <p class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=On+The+River+Inn+Woodstock+VT" target="_blank" rel="noopener">Google Maps &amp; reviews</a></p>
+        </article>
+        <article class="map-card">
+          <h3>Billings Farm</h3>
+          <p>Saturday Harvest · 69 Old River Road</p>
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Billings Farm and Museum" src="https://maps.google.com/maps?q=Billings+Farm+and+Museum,+69+Old+River+Road,+Woodstock,+VT&z=15&output=embed&hl=en"></iframe>
+          <p class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Billings+Farm+and+Museum+Woodstock+VT" target="_blank" rel="noopener">Google Maps &amp; reviews</a></p>
+        </article>
+        <article class="map-card">
+          <h3>VINS Nature Center</h3>
+          <p>Friday morning · 149 Natures Way, Quechee</p>
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of VINS Nature Center" src="https://maps.google.com/maps?q=VINS+Nature+Center,+149+Natures+Way,+Quechee,+VT&z=15&output=embed&hl=en"></iframe>
+          <p class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=VINS+Nature+Center+Quechee+VT" target="_blank" rel="noopener">Google Maps &amp; reviews</a></p>
+        </article>
+        <article class="map-card">
+          <h3>Quechee Gorge</h3>
+          <p>Overlook only · Route 4 bridge</p>
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Quechee Gorge" src="https://maps.google.com/maps?q=Quechee+Gorge,+Quechee,+VT&z=15&output=embed&hl=en"></iframe>
+          <p class="links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Quechee+Gorge+Vermont" target="_blank" rel="noopener">Google Maps &amp; reviews</a></p>
+        </article>
+      </div>
     </section>
 
     <section class="section days-section" id="days">
@@ -160,6 +226,10 @@
             <p class="day-kicker">Thursday, October 1 · Arrival</p>
             <h3>Play stop, car nap, then a soft landing</h3>
             <p>No ticketed attraction today. Time the morning so 12:30–2:30 is on the road after playground time. Check in as he wakes, then one short village or overlook walk before an early dinner.</p>
+            <figure class="day-banner">
+              <img src="images/bridge-800.jpg" srcset="images/bridge-800.jpg 800w, images/bridge.jpg 1200w" sizes="(max-width: 700px) 100vw, 720px" width="1200" height="800" alt="Woodstock Middle Covered Bridge over the Ottauquechee" loading="lazy">
+              <figcaption>Soft landing: Middle Covered Bridge in the village</figcaption>
+            </figure>
           </header>
 
           <div class="timeline">
@@ -178,6 +248,11 @@
                   <div><dt>Toddler note</dt><dd>This is a play stop, not lunch-and-linger. Get him moving, then buckle in so the nap window starts on the highway.</dd></div>
                   <div><dt>Stroller</dt><dd>Useful at Elizabeth Park paths; optional at Wickham playgrounds. Keep the cabin bag (wipes, water, lovey) in reach.</dd></div>
                 </dl>
+                <aside class="guest-say">
+                  <p class="guest-rating"><span aria-hidden="true">★★★★★</span> About 4.7 on Google · Elizabeth Park</p>
+                  <p class="guest-quote">Visitors keep mentioning the Ana Grace playground and that it is an easy, free stretch-break with room to run.</p>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Elizabeth+Park+West+Hartford+CT" target="_blank" rel="noopener">Read reviews on Google</a>
+                </aside>
                 <p class="links">
                   <a href="https://elizabethparkct.org/" target="_blank" rel="noopener">Elizabeth Park</a>
                   <a href="https://wickhampark.org/" target="_blank" rel="noopener">Wickham Park</a>
@@ -214,6 +289,14 @@
                   <div><dt>Toddler note</dt><dd>At the gorge: <strong>bridge overlook only</strong>. Do not take the steep trail to the bottom.</dd></div>
                   <div><dt>Stroller</dt><dd>Village sidewalks are easy. Hold him on the gorge span if it is windy or crowded.</dd></div>
                 </dl>
+                <figure class="shot">
+                  <img src="images/gorge-800.jpg" srcset="images/gorge-800.jpg 800w, images/gorge.jpg 1200w" sizes="(max-width: 700px) 100vw, 640px" width="1200" height="800" alt="Looking into Quechee Gorge from the highway bridge" loading="lazy">
+                </figure>
+                <aside class="guest-say">
+                  <p class="guest-rating"><span aria-hidden="true">★★★★☆</span> About 4.6 on Google · Quechee Gorge</p>
+                  <p class="guest-quote">People call the bridge view the whole show — a few minutes, no hike required. That is the version we want with a toddler.</p>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Quechee+Gorge+Vermont" target="_blank" rel="noopener">Read reviews on Google</a>
+                </aside>
                 <p class="links">
                   <a href="https://www.vtstateparks.com/parks/quechee" target="_blank" rel="noopener">Quechee State Park / gorge</a>
                 </p>
@@ -258,6 +341,10 @@
             <p class="day-kicker">Friday, October 2 · Nature</p>
             <h3>VINS in the morning, park and village after the nap</h3>
             <p>Raptors and the Beaver Lodge. Do <strong>not</strong> add Billings or Harvest today — Saturday is the farm day.</p>
+            <figure class="day-banner">
+              <img src="images/owl-800.jpg" srcset="images/owl-800.jpg 800w, images/owl.jpg 1071w" sizes="(max-width: 700px) 100vw, 720px" width="1071" height="800" alt="Great horned owl at the VINS Nature Center" loading="lazy">
+              <figcaption>VINS, Quechee — raptors at toddler eye level</figcaption>
+            </figure>
           </header>
 
           <div class="timeline">
@@ -274,6 +361,11 @@
                   <div><dt>Toddler note</dt><dd>Do the raptor walk and Beaver Lodge. <strong>Skip the Forest Canopy Walk / treehouse platforms with stairs</strong>.</dd></div>
                   <div><dt>Stroller</dt><dd>Main walkways and the Beaver Lodge are accessible. Park the stroller at the Welcome Center if a path narrows.</dd></div>
                 </dl>
+                <aside class="guest-say">
+                  <p class="guest-rating"><span aria-hidden="true">★★★★★</span> About 4.7 on Google · VINS</p>
+                  <p class="guest-quote">Reviews keep circling the same two things: close raptor enclosures, and that the Beaver Lodge saves a visit with little kids.</p>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=VINS+Nature+Center+Quechee+VT" target="_blank" rel="noopener">Read reviews on Google</a>
+                </aside>
                 <p class="links">
                   <a href="https://vinsweb.org/" target="_blank" rel="noopener">VINS</a>
                   <a href="https://vinsweb.org/visit/" target="_blank" rel="noopener">Visit &amp; accessibility</a>
@@ -335,6 +427,10 @@
             <p class="day-kicker">Saturday, October 3 · Harvest</p>
             <h3>Billings Farm Harvest Celebration, then home for the nap</h3>
             <p>Arrive at opening, leave around noon. Do <strong>not</strong> stack VINS. The official weekend is Saturday–Sunday, October 3–4, 2026 — not October 4–5.</p>
+            <figure class="day-banner">
+              <img src="images/billings-800.jpg" srcset="images/billings-800.jpg 800w, images/billings.jpg 1600w" sizes="(max-width: 700px) 100vw, 720px" width="1600" height="754" alt="Open meadows at Billings Farm with barns beyond" loading="lazy">
+              <figcaption>Billings Farm — Harvest weekend is this landscape plus wagons and cider</figcaption>
+            </figure>
           </header>
 
           <div class="timeline">
@@ -353,6 +449,11 @@
                   <div><dt>Toddler note</dt><dd>Sensory play + animals first. Wagon rides if the line is short. Skip anything that means waiting through lunch.</dd></div>
                   <div><dt>Stroller</dt><dd>Fine on crushed-stone paths. Leave it outside the Farm Manager’s House. A carrier is useful inside.</dd></div>
                 </dl>
+                <aside class="guest-say">
+                  <p class="guest-rating"><span aria-hidden="true">★★★★★</span> About 4.7 on Google · Billings Farm</p>
+                  <p class="guest-quote">Guests talk about the Jersey cows, the 1890 farmhouse, and that under-3s make it an easy family morning — not a theme park.</p>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Billings+Farm+and+Museum+Woodstock+VT" target="_blank" rel="noopener">Read reviews on Google</a>
+                </aside>
                 <p class="links">
                   <a href="https://billingsfarm.org/harvest-celebration/" target="_blank" rel="noopener">Harvest Celebration</a>
                   <a href="https://billingsfarm.org/" target="_blank" rel="noopener">Billings Farm</a>
@@ -411,6 +512,10 @@
             <p class="day-kicker">Sunday, October 4 · Choice</p>
             <h3>Second Harvest only if Saturday was a hit</h3>
             <p>Do not force another full festival morning if he is fried. A quieter Sunday — Sugarbush early, Marsh-Billings, or the village — is the better default. Afternoon stays soft.</p>
+            <figure class="day-banner">
+              <img src="images/maple-800.jpg" srcset="images/maple-800.jpg 800w, images/maple.jpg 800w" sizes="(max-width: 700px) 100vw, 720px" width="800" height="536" alt="Jars of different grades of Vermont maple syrup" loading="lazy">
+              <figcaption>Quiet Sunday default: maple and cheese at Sugarbush, not another festival</figcaption>
+            </figure>
           </header>
 
           <div class="timeline">
@@ -445,6 +550,11 @@
                   <div><dt>Village</dt><dd>Mon Vert (check their closed day), Yankee Bookshop, green. Lowest friction.</dd></div>
                   <div><dt>Stroller</dt><dd>Sugarbush is mixed — farmyard and store are fine; maple walk is nicer with a carrier if wet.</dd></div>
                 </dl>
+                <aside class="guest-say">
+                  <p class="guest-rating"><span aria-hidden="true">★★★★★</span> About 4.8 on Google · Sugarbush Farm</p>
+                  <p class="guest-quote">People go for the free samples and the country-store stop — “worth the gravel road” is the usual line.</p>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Sugarbush+Farm+Woodstock+VT" target="_blank" rel="noopener">Read reviews on Google</a>
+                </aside>
                 <p class="links">
                   <a href="https://sugarbushfarm.com/" target="_blank" rel="noopener">Sugarbush Farm</a>
                   <a href="https://sugarbushfarm.com/hours-directions/" target="_blank" rel="noopener">Hours &amp; directions</a>
@@ -486,6 +596,10 @@
             <p class="day-kicker">Monday, October 5 · Home</p>
             <h3>A short morning, then the car nap south</h3>
             <p>Sugarbush if you skipped it Sunday; otherwise village coffee. Worthy is closed Monday — kitchen breakfast only. Depart around noon so 12:30–2:30 is on I-91.</p>
+            <figure class="day-banner">
+              <img src="images/maple-walk-800.jpg" srcset="images/maple-walk-800.jpg 800w, images/maple-walk.jpg 1067w" sizes="(max-width: 700px) 100vw, 720px" width="1067" height="800" alt="Maple sap bucket on a tapped maple tree" loading="lazy">
+              <figcaption>If Sugarbush is still on the list — a short farm morning, then the car</figcaption>
+            </figure>
           </header>
 
           <div class="timeline">
@@ -547,12 +661,27 @@
       <div class="section-head">
         <p class="eyebrow">Where you sleep</p>
         <h2>Lodging · 4 nights</h2>
-        <p class="section-lede">Check in Thursday, October 1. Check out Monday, October 5. Kitchen + living room is the whole strategy. Ground floor if you can get it. Confirm a crib before you put down a deposit.</p>
+        <p class="section-lede">Check in Thursday, October 1. Check out Monday, October 5. A Quechee Airbnb is under review. On The River Farmhouse remains the strong hotel alternative. Kitchen + living room is the whole strategy. Confirm a crib before you put down a deposit.</p>
       </div>
 
       <div class="lodging-grid">
+        <article class="stay stay-pending">
+          <p class="stay-flag pending">Under review</p>
+          <h3>Considering: Private Quechee House near the Club &amp; Golf</h3>
+          <p class="addr">Airbnb · Quechee · Oct 1–5 pending</p>
+          <p>A private house near the Quechee Club and golf. Still <strong>under review</strong> for crib, stairs, kitchen, and whether a 22-month-old can nap there. Do not book until we confirm the layout.</p>
+          <ul>
+            <li>Confirm pack-and-play / crib and ground-floor sleep space</li>
+            <li>Check stairs, loft, and any club or golf fees</li>
+            <li>Compare drive time back for Friday–Sunday naps vs Woodstock</li>
+          </ul>
+          <p class="links">
+            <a href="https://www.airbnb.com/rooms/40594337" target="_blank" rel="noopener">Airbnb listing</a>
+          </p>
+        </article>
+
         <article class="stay stay-primary">
-          <p class="stay-flag">Primary</p>
+          <p class="stay-flag alt">Strong alt</p>
           <h3>On The River Inn · Farmhouse 2BR</h3>
           <p class="addr">1653 W Woodstock Rd, Woodstock · Oct 1–5</p>
           <p>Separate farmhouse building: full kitchen, living/dining, two bedrooms, two baths. Prefer the <strong>ground-floor courtyard two-bedroom</strong> so you are not carrying a sleeping toddler up stairs. Hotel perks (indoor pool, s’mores) sit behind a nightly amenity fee — confirm the current amount when you book.</p>
@@ -561,6 +690,11 @@
             <li>West of the village — quieter, easy Friday–Sunday nap return</li>
             <li>506 Bistro is on site if you need a backup meal</li>
           </ul>
+          <aside class="guest-say">
+            <p class="guest-rating"><span aria-hidden="true">★★★★☆</span> About 4.5 on Google · On The River Inn</p>
+            <p class="guest-quote">Guests like the river setting and the farmhouse kitchens — ask about noise and the amenity fee before you book.</p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=On+The+River+Inn+Woodstock+VT" target="_blank" rel="noopener">Read reviews on Google</a>
+          </aside>
           <p class="links">
             <a href="https://ontheriverwoodstock.com/" target="_blank" rel="noopener">On The River Inn</a>
             <a href="https://ontheriverwoodstock.com/rooms/farmhouse-suites/farmhouse-courtyard-ground-floor-two-bedroom/" target="_blank" rel="noopener">Ground-floor Farmhouse 2BR</a>
@@ -680,7 +814,16 @@
   <footer class="site-footer">
     <p>Oct 1–5, 2026 · pocket itinerary for one family trip. Hours can change; official links win.</p>
     <p class="footer-meta">Open this page once, then it works from the phone cache. Checklists stay on the device.</p>
+    <p class="footer-meta">Photos are stored in this site’s <code>/images</code> folder (Wikimedia Commons). Bridge: Daveynin. Foliage: public-domain Woodstock view. Pumpkins/fence foliage: Anthony Quintano. Gorge: Wikimedia <cite>Quechee Gorge Bridge</cite>. VINS owl: Šarūnas Burdulis. Billings meadows: Wikimedia <cite>Billings Farm, Vermont wide view</cite> and NPS HALS. Maple: Morse Farm syrup grades; sap bucket, Rhavasy. See the README for licenses and file pages.</p>
   </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photograph">
+    <div class="lightbox-inner">
+      <button type="button" class="lightbox-close" id="lightbox-close">Close</button>
+      <img id="lightbox-image" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </div>
+  </dialog>
 
   <script src="app.js"></script>
 </body>
